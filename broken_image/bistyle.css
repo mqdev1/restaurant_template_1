@@ -1,0 +1,63 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: blueviolet;
+}
+body *
+{
+    color: #fff !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+.broken_image{
+    display: block;
+    width: 640px;
+    height: 420px;
+    background-color: transparent;
+    margin: 100px auto;
+}
+.broken_image h3{
+    font-size: 2pc;
+    padding: 0;
+    margin: 0;
+}
+.broken_image p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.broken_image .container
+{
+    display: flexbox;
+    width: auto;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.container .item
+{
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 25%;
+    background-color: #f9f9f9;
+    float: left;
+    overflow: hidden;
+    filter: grayscale(1px);
+    transition: .3s;
+}
+.container .item:hover
+{
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+.container .item:hover img
+{
+    filter: blur(0px);
+}
+.container .item img{
+    position: relative;
+    width: 640px;
+    height: 420px;
+    filter: blur(2px);
+}
